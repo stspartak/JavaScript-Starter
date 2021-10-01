@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+
+<body>
+    <pre>
+        Задание:
+        Внесите изменения в сценарий. Сделайте, чтобы значение для радиуса и высоты вводил пользователь.
+        При выводе значений используйте форматированный вывод, например, "объем цилиндра с высотой X и радиусом Y = Z"
+    </pre>
+    <script>
+        console.log("Вычисление объема цилиндра.");
+        //  V=π * r в квадрате * h
+        let V;
+        const Pi = Math.PI; // правильно использовать константу для подобных значений
+
+        let inputR = prompt("Введите радиус цилиндра", 0);
+        let inputH = prompt("Введите высоту цилиндра", 0);
+
+        let r = Number(inputR); // радиус
+        let h = Number(inputH); // высота
+
+        V = Pi * r * r * h;
+        console.log(`объем цилиндра с высотой ${h} и радиусом ${r} = ${V}`);
+    </script>
+</body>
+
+</html>
