@@ -7,9 +7,10 @@
 </head>
 <body>
 <pre>
-        Задание:
-        Выполните задание в соответствии с комментарием в коде
-    </pre>
+    Задание:
+    Выполните задание в соответствии с комментарием в коде
+</pre>
+
 <script>
     let product1 = "Бумага офисная А4, 80 г/м2, 500 л";
     let product2 = "Биндеры для бумаги 51 мм";
@@ -25,6 +26,17 @@
 
     // Выведите на экран сколько пользователю нужно заплатить за каждый продукт по отдельности и всего за все продукты
     // используйте форматированный вывод
+
+    let totalProductPrice1 = productQuantity1 * productPrice1;
+    let totalProductPrice2 = productQuantity2 * productPrice2;
+    let totalProductPrice3 = productQuantity3 * productPrice3;
+
+    let total = totalProductPrice1 + totalProductPrice2 + totalProductPrice3;
+
+    alert(`За продукт '${product1}' нужно заплатить ${totalProductPrice1}`);
+    alert(`За продукт '${product2}' нужно заплатить ${totalProductPrice2}`);
+    alert(`За продукт '${product3}' нужно заплатить ${totalProductPrice3}`);
+    alert(`Стоимость всех продуктов ${total}`);
 </script>
 </body>
 </html>
