@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 1</title>
+    <title>Task 4</title>
 </head>
 <body>
-    <pre>
-        Задание:
-        Доработайте сценарий. Если пользователь заказывает товаров больше, чем есть на складе - сообщите ему об этом. Если пользователь заказывает
-        количество товаров, не превышающее количество на складе - рассчитайте общую стоимость заказа.
-    </pre>
-    <script>
-        let productPrice = 101.5; // цена товара
-        let productQuantity = 50;  // количество единиц товара на складе
+<pre>
+    Задание:
+    Доработайте сценарий. Если пользователь заказывает товаров больше, чем есть на складе - сообщите ему об этом. Если пользователь заказывает
+    количество товаров, не превышающее количество на складе - рассчитайте общую стоимость заказа.
+</pre>
+<script>
+    let productPrice = 101.5; // цена товара
+    let productQuantity = 50;  // количество единиц товара на складе
 
-        let count = prompt("Сколько единиц товара Вы хотите приобрести?", 1);
-        let totalSum = count * productPrice;
-        let leftInStorage = productQuantity - count;
+    let count = +prompt("Сколько единиц товара Вы хотите приобрести?");
+    let totalSum = count * productPrice;
+    let leftInStorage = productQuantity - count;
 
+    if (count == 0) {
+        alert("Вы ввели 'NULL");
+    } else if (count != count) {    // isNaN(count)
+        alert("Вы ввели не число");
+    } else if (count > productQuantity) {
+        alert("На складе только " + productQuantity + " единиц товара");
+    } else {
         alert("Общая стоимость " + totalSum);
-        alert("Количество товара останется на складе после покупки" + leftInStorage);
-    </script>
+        alert("Количество товара останется на складе после покупки " + leftInStorage);
+    }
+</script>
 </body>
 </html>

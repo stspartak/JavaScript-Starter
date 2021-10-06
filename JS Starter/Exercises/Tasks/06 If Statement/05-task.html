@@ -8,29 +8,23 @@
 </head>
 
 <body>
-    <pre>
-        Задание:
-        Перепишите код так, чтобы в нем использовалась конъюнкция
-    </pre>
-    <script>
-        let login = "admin";
-        let password = "12345";
+<pre>
+    Задание:
+    Перепишите код так, чтобы в нем использовалась конъюнкция
+</pre>
+<script>
+    let login = "admin";
+    let password = "12345";
 
-        let inputLogin = prompt("Введите логин");
-        let inputPassword = prompt("Введите пароль");
+    let inputLogin = prompt("Введите логин");
+    let inputPassword = prompt("Введите пароль");
 
-        if (inputLogin == login)
-        {
-            if (inputPassword == password)
-            {
-                alert("Вы авторизованы!");
-            }
-        }
-        else
-        {
-            alert("Логин или пароль введены неправильно");
-        }
-    </script>
+    if (inputLogin == login && inputPassword == password) {
+        alert("Вы авторизованы!");
+    } else {
+        alert("Логин или пароль введены неправильно");
+    }
+</script>
 </body>
 
 </html>
