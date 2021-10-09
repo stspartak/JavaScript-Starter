@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 4</title>
 </head>
+
 <body>
-    <pre>
-        Задание:
-        Запросите у пользователя число, посчитайте сумму всех числе между 0 и введенным значением и отобразите результат на экран.
-    </pre>
-    <script>
-        
-    </script>
+<pre>
+    Задание:
+    Запросите у пользователя число, посчитайте сумму всех числе между 0 и введенным значением и отобразите результат на экран.
+</pre>
+<script>
+    let input = +prompt('Введите число');
+    let sum = 0;
+
+    for (let i = 0; i < input; i++) {
+        sum += 1;
+    }
+    console.log(`Сумма всех числе между 0 и ${input} = ${sum}`);
+</script>
 </body>
+
 </html>
