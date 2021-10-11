@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 3</title>
 </head>
+
 <body>
-    <pre>
-        Задание:
-        Напишите сценарий, который найдет в массиве все отрицательные значения и заменить их на значения 0.
-        После этого выведет на экран все элементы массива.
-    </pre>
-    <script>
-        let values = [10, 20, -2, 6, 11, -10, 125, -3, 8, 0, 3];
-    </script>
+<pre>
+    Задание:
+    Напишите сценарий, который найдет в массиве все отрицательные значения и заменить их на значения 0.
+    После этого выведет на экран все элементы массива.
+</pre>
+<script>
+    let values = [10, 20, -2, 6, 11, -10, 125, -3, 8, 0, 3];
+
+    for (let index = 0; index < values.length; index++) {
+        if (values[index] < 0) {
+            values[index] = 0;
+        }
+    }
+
+    for (let element of values) {
+        console.log(element);
+    }
+</script>
 </body>
+
 </html>

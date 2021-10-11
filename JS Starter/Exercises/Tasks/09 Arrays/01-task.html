@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 1</title>
 </head>
+
 <body>
-    <pre>
-        Задание:
-        Напишите сценарий, который найдет минимальное, максимальное значения массива, а также выведет сумму всех элементов массива.
-    </pre>
-    <script>
-        let values = [10, 20, 4, 6, 11, 9, 125, 1, 8, 0, 3];
-    </script>
+<pre>
+    Задание:
+    Напишите сценарий, который найдет минимальное, максимальное значения массива, а также выведет сумму всех элементов массива.
+</pre>
+<script>
+    let values = [10, 20, 4, 6, 11, 9, 125, 1, 8, 0, 3];
+
+    let min = Number.MIN_VALUE;
+    let max = Number.MAX_VALUE;
+    let sum = 0;
+
+    for (let index = 0; index < values.length; index++) {
+        const element = values[index];
+        if (element > min){
+            min = element;
+        }
+        if (element < max){
+            max = element];
+        }
+        sum += element;
+    }
+    console.log(min);
+    console.log(max);
+    console.log(sum);
+</script>
 </body>
+
 </html>
