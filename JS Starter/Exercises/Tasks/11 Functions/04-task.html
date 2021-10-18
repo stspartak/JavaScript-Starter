@@ -8,20 +8,28 @@
 </head>
 
 <body>
-    <pre>
-        Задание:
-        Создайте функцию random(min, max), которая возвращает случайное значение в диапазоне от min до max.
-        Сделайте, чтобы сценарий заработал. Код генерации случайного значения найдите с помощью поисковой системы или в заданиях из прошлых уроков.
-    </pre>
-    <script>
-        let throwCount = +prompt("Сколько раз вы хотите бросить шестигранный кубик");
+<pre>
+    Задание:
+    Создайте функцию random(min, max), которая возвращает случайное значение в диапазоне от min до max.
+    Сделайте, чтобы сценарий заработал. Код генерации случайного значения найдите с помощью поисковой системы или в заданиях из прошлых уроков.
+</pre>
+<script>
+    function random(min, max) {
+        // min = Math.ceil(min);
+        // max = Math.floor(max);
+        // return Math.floor(Math.random() * (max - min)) + min; //Максимум не включается, минимум включается
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
+    }
 
-        for (let i = 0; i < throwCount; i++) {
-            const result = random(1, 6);
-            console.log(result);
-        }
+    let throwCount = +prompt("Сколько раз вы хотите бросить шестигранный кубик");
 
-    </script>
+    for (let i = 0; i < throwCount; i++) {
+        const result = random(1, 6);
+        console.log(result);
+    }
+</script>
 </body>
 
 </html>
