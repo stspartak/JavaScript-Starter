@@ -8,21 +8,23 @@
 </head>
 
 <body>
-    <pre>
-        Задание:
-        Замените в коде все функции-выражения на стрелочные функции.
-    </pre>
-    <script>
-        var data = [1, 2, 3, 4, 5];
+<pre>
+    Задание:
+    Замените в коде все функции-выражения на стрелочные функции.
+</pre>
+<script>
+    const data = [1, 2, 3, 4, 5];
 
-        var result = data.map(function (value) {
-            return value * value;
-        });
+    let result = data.map(value => value * value);
+    // var result = data.map(function (value) {
+    //     return value * value;
+    // });
 
-        result.forEach(function(e) {
-            console.log(e);
-        });
-    </script>
+    result.forEach(e => console.log(e));
+    // result.forEach(function (e) {
+    //     console.log(e);
+    // });
+</script>
 </body>
 
 </html>
